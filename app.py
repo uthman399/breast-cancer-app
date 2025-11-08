@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load model and scaler
-model = joblib.load('model.pkl')
+model = joblib.load('breast_cancer_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
 @app.route('/')
