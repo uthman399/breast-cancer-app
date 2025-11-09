@@ -6,7 +6,7 @@
 <body>
     <h2>Enter Tumor Features</h2>
     <form action="/predict" method="post">
-        {% for i in range(30) %}
+        {% for i in range(31) %}
             <input type="text" name="feature{{ i }}" placeholder="Feature {{ i+1 }}" required><br>
         {% endfor %}
         <input type="submit" value="Predict">
